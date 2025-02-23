@@ -28,16 +28,17 @@ Para poder replicar el proyecto, se requiere tener:
   <li>Dar clic a "save channel".</li>
   <li>Una vez ya en el canal, dar clic en MATLAB Visualization.</li>
   <li>Darle clic a create.</li>
-  <li>En el apartado de MATLAB code, pegar el código dado en el archivo average.py</li>
+  <li>En el apartado de MATLAB code, pegar el código dado en el archivo average.py, cambiando la variable channelID y alertAPIKey por las propias.</li>
   <li>Dar clic en el botón de "save".</li>
   <li>Ir de vuelta al canal creado.</li>
   <li>Dar clic en el botón de MATLAB analysis.</li>
   <li>Pegar el código del archivo email.py en el apartado de MATLAB code.</li>
   <li>Dar clic en el apartado de "React"</li>
-  <li></li>
-  <li></li>
-  <li></li>
-  
+  <li>Copiar la siguiente configuración</li>
+  ![Configutation](https://github.com/user-attachments/assets/360bd4df-7a04-4925-bd14-e4d12f231efa)
+  <li>Dar clic en "save react".</li>
+  <li>Presionar "save" en el analysis.</li>
+
 </ol>
 
 ### Para configurar la Raspberry
@@ -45,7 +46,8 @@ Para poder replicar el proyecto, se requiere tener:
   <li>Clonar el repositorio con ayuda de la terminal o alguna aplicación. </li>
   <li>Abrir el IDE Thonny.</li>
   <li>Abrir el archivo parcial_1_iot.py en el IDE.</li>
-  <li>Conectar la placa a un puerto de la computadora</li>
+  <li>Cambiar las variables SSID, PASSWORD y API_URL, por el nombre del internet local, su contraseña y el URL de método GET que se obtiene al crear el canal.</li>
+  <li>Conectar la placa a un puerto de la computadora.</li>
   <li>Checar que en apartado inferior derecho diga Micropython(Raspberry pi pico), de lo contrario, dar clic en ese apartado-> configurar intérprete -> Micropython</li>
   <li>Dar clic en el apartado de file -> save as</li>
   <li>Seleccionar Raspberry pi pico.</li>
