@@ -33,11 +33,13 @@ Para poder replicar el proyecto, se requiere tener:
   <li>Volver al canal creado.</li>
   <li>Hacer clic en el botón <strong>MATLAB Analysis</strong>.</li>
   <li>Pegar el código del archivo <code>email.txt</code> en el apartado <strong>MATLAB Code</strong>.</li>
+  <li>Presionar <strong>"Save"</strong> en el análisis.</li>
   <li>Hacer clic en la pestaña <strong>"React"</strong>.</li>
   <li>Configurar los parámetros según la siguiente imagen:</li>
   <img src="https://github.com/user-attachments/assets/360bd4df-7a04-4925-bd14-e4d12f231efa" alt="Configuración">
+  <p>Se debe cambiar <strong>If channel</strong> por el canal creado anteriormente y <strong>Code to execute</strong> por el MATLAB Analysis que se creó en el paso 8</p>
   <li>Hacer clic en <strong>"Save React"</strong>.</li>
-  <li>Presionar <strong>"Save"</strong> en el análisis.</li>
+ 
 </ol>
 
 ### Para configurar la Raspberry Pi
