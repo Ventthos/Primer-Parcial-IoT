@@ -1,0 +1,27 @@
+% ID del canal
+channelID = 2844970;
+
+% API de alertas
+alertApiKey = 'TAKGoU1jVWvQf7sat5o';
+
+% URL para alertas
+alertUrl="https://api.thingspeak.com/alerts/send";
+
+% webwrite uses weboptions to add required headers.  Alerts needs a ThingSpeak-Alerts-API-Key header.
+options = weboptions("HeaderFields", ["ThingSpeak-Alerts-API-Key", alertApiKey ]);
+
+% Header del email
+alertSubject = sprintf("Alerta de temperatura");
+% Cuerpo del email
+alertBody = 'La temperatura está que arde. Hay más de 35°C ';
+
+% Mandar el email
+try
+    % Intentar enviar la alerta
+    webwrite(alertUrl , "body", alertBody, "subject", alertSubject, options);
+    % Si tiene éxito
+    fprintf("Email enviado con éxito.\n");
+catch someException
+    % Si ocurre un error
+    fprintf("Failed to send alert: %s\n", someException.message);
+end

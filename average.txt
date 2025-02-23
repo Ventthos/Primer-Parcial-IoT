@@ -1,0 +1,27 @@
+% ID del canal del cual se leerán los datos
+readChannelID = 2844970;
+% Índice del canal del cual se leerán los datos
+fieldID1 = 1;
+
+% Clave de la API para leer
+readAPIKey = 'IKHR92P7O8IVEIPC';
+
+% Leer los 100 puntos más recientes de datos
+[temperature, time] = thingSpeakRead(readChannelID, 'Field', fieldID1, 'NumPoints', 100, 'ReadKey', readAPIKey);
+
+% Inicializar un vector para los promedios
+avgTemperatures = [];
+
+% Calcular el promedio de cada punto y los 9 anteriores (promedio móvil)
+for i = 10:length(temperature)
+    avgTemperature = mean(temperature(i-9:i));  % Promedio de los últimos 10 puntos
+    avgTemperatures = [avgTemperatures, avgTemperature];  % Almacenar el promedio
+end
+
+% Graficar la evolución de la temperatura promedio
+plot(time(10:end), avgTemperatures, '-ro', 'MarkerFaceColor', 'r', 'MarkerSize', 4)
+xlabel('Tiempo');
+ylabel('Temperatura Promedio');
+grid on;
+
+disp(avgTemperatures);
