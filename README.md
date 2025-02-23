@@ -19,40 +19,38 @@ Para poder replicar el proyecto, se requiere tener:
   <li>Terminal de Github o aplicación manejadora de Github.</li>
 </ul>
 
-### Para configurar la ThingSpeak
+### Para configurar ThingSpeak
 <ol>
-  <li>Iniciar sesión en ThingSpeak</li>
-  <li>Ir al apartado de my channels</li>
-  <li>Dar clic en el botón "New channel"</li>
-  <li>Darle un nombre al canal y al canal número 1 darle el nombre de temperature.</li>
-  <li>Dar clic a "save channel".</li>
-  <li>Una vez ya en el canal, dar clic en MATLAB Visualization.</li>
-  <li>Darle clic a create.</li>
-  <li>En el apartado de MATLAB code, pegar el código dado en el archivo average.py, cambiando la variable channelID y alertAPIKey por las propias.</li>
-  <li>Dar clic en el botón de "save".</li>
-  <li>Ir de vuelta al canal creado.</li>
-  <li>Dar clic en el botón de MATLAB analysis.</li>
-  <li>Pegar el código del archivo email.py en el apartado de MATLAB code.</li>
-  <li>Dar clic en el apartado de "React"</li>
-  <li>Copiar la siguiente configuración</li>
-  ![Configutation](https://github.com/user-attachments/assets/360bd4df-7a04-4925-bd14-e4d12f231efa)
-  <li>Dar clic en "save react".</li>
-  <li>Presionar "save" en el analysis.</li>
-
+  <li>Iniciar sesión en ThingSpeak.</li>
+  <li>Ir al apartado de <strong>My Channels</strong>.</li>
+  <li>Hacer clic en el botón <strong>"New Channel"</strong>.</li>
+  <li>Asignar un nombre al canal y, en el <strong>Campo 1</strong>, nombrarlo <strong>"Temperature"</strong>.</li>
+  <li>Hacer clic en <strong>"Save Channel"</strong>.</li>
+  <li>Dentro del canal creado, ir a la pestaña <strong>MATLAB Visualization</strong>.</li>
+  <li>Hacer clic en <strong>"Create"</strong>.</li>
+  <li>En el apartado <strong>MATLAB Code</strong>, pegar el código del archivo <code>average.py</code>, asegurándose de reemplazar las variables <code>channelID</code> y <code>alertAPIKey</code> con las propias.</li>
+  <li>Hacer clic en el botón <strong>"Save"</strong>.</li>
+  <li>Volver al canal creado.</li>
+  <li>Hacer clic en el botón <strong>MATLAB Analysis</strong>.</li>
+  <li>Pegar el código del archivo <code>email.py</code> en el apartado <strong>MATLAB Code</strong>.</li>
+  <li>Hacer clic en la pestaña <strong>"React"</strong>.</li>
+  <li>Configurar los parámetros según la siguiente imagen:</li>
+  <img src="https://github.com/user-attachments/assets/360bd4df-7a04-4925-bd14-e4d12f231efa" alt="Configuración">
+  <li>Hacer clic en <strong>"Save React"</strong>.</li>
+  <li>Presionar <strong>"Save"</strong> en el análisis.</li>
 </ol>
 
-### Para configurar la Raspberry
+### Para configurar la Raspberry Pi
 <ol>
-  <li>Clonar el repositorio con ayuda de la terminal o alguna aplicación. </li>
-  <li>Abrir el IDE Thonny.</li>
-  <li>Abrir el archivo parcial_1_iot.py en el IDE.</li>
-  <li>Cambiar las variables SSID, PASSWORD y API_URL, por el nombre del internet local, su contraseña y el URL de método GET que se obtiene al crear el canal.</li>
-  <li>Conectar la placa a un puerto de la computadora.</li>
-  <li>Checar que en apartado inferior derecho diga Micropython(Raspberry pi pico), de lo contrario, dar clic en ese apartado-> configurar intérprete -> Micropython</li>
-  <li>Dar clic en el apartado de file -> save as</li>
-  <li>Seleccionar Raspberry pi pico.</li>
-  <li>Guardar el archivo como main.py</li>
-  <li>Desconectar la placa y volverla a conectar.</li>
+  <li>Clonar el repositorio mediante la terminal o una aplicación de control de versiones.</li>
+  <li>Abrir el IDE <strong>Thonny</strong>.</li>
+  <li>Abrir el archivo <code>parcial_1_iot.py</code> en el IDE.</li>
+  <li>Modificar las variables <code>SSID</code>, <code>PASSWORD</code> y <code>API_URL</code>, reemplazándolas con el nombre de la red WiFi, su contraseña y la URL del método <strong>GET</strong> generada en <strong>ThingSpeak</strong>.</li>
+  <li>Conectar la placa a un puerto USB de la computadora.</li>
+  <li>Verificar que en la esquina inferior derecha de <strong>Thonny</strong> aparezca <strong>"MicroPython (Raspberry Pi Pico)"</strong>. Si no es así, hacer clic en ese apartado y seleccionar <strong>"Configurar intérprete" -> "MicroPython"</strong>.</li>
+  <li>Hacer clic en el apartado <strong>File -> Save As</strong>.</li>
+  <li>Seleccionar <strong>Raspberry Pi Pico</strong> como destino.</li>
+  <li>Guardar el archivo con el nombre <code>main.py</code>.</li>
+  <li>Desconectar y volver a conectar la placa.</li>
 </ol>
-
 
