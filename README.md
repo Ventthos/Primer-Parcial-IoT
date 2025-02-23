@@ -28,11 +28,11 @@ Para poder replicar el proyecto, se requiere tener:
   <li>Hacer clic en <strong>"Save Channel"</strong>.</li>
   <li>Dentro del canal creado, ir a la pestaña <strong>MATLAB Visualization</strong>.</li>
   <li>Hacer clic en <strong>"Create"</strong>.</li>
-  <li>En el apartado <strong>MATLAB Code</strong>, pegar el código del archivo <code>average.py</code>, asegurándose de reemplazar las variables <code>channelID</code> y <code>alertAPIKey</code> con las propias.</li>
+  <li>En el apartado <strong>MATLAB Code</strong>, pegar el código del archivo <code>average.txt</code>, asegurándose de reemplazar las variables <code>channelID</code> y <code>alertAPIKey</code> con las propias.</li>
   <li>Hacer clic en el botón <strong>"Save"</strong>.</li>
   <li>Volver al canal creado.</li>
   <li>Hacer clic en el botón <strong>MATLAB Analysis</strong>.</li>
-  <li>Pegar el código del archivo <code>email.py</code> en el apartado <strong>MATLAB Code</strong>.</li>
+  <li>Pegar el código del archivo <code>email.txt</code> en el apartado <strong>MATLAB Code</strong>.</li>
   <li>Hacer clic en la pestaña <strong>"React"</strong>.</li>
   <li>Configurar los parámetros según la siguiente imagen:</li>
   <img src="https://github.com/user-attachments/assets/360bd4df-7a04-4925-bd14-e4d12f231efa" alt="Configuración">
