@@ -12,8 +12,8 @@ Los datos recolectados y subidos a la plataforma, se muestran en una gráfica y 
 ## Instrucciones de instalación
 Para poder replicar el proyecto, se requiere tener:
 <ul>
-  <li>Una Raspberry Pi Pico w con micro python instalado. </li>
-  <li>El IDE Thonny instalado.</li>
+  <li>Una Raspberry Pi Pico w con micro python instalado. Si no se tiene instalado consultar: <a href="https://projects.raspberrypi.org/en/projects/get-started-pico-w/1">https://projects.raspberrypi.org/en/projects/get-started-pico-w/1</a></li>
+  <li>El IDE Thonny instalado y configurado para manejar MicroPython. Su configuración también puede ser vista en el link del paso 1.</li>
   <li>Cable micro USB.</li>
   <li>Una cuenta de ThingSpeak.</li>
   <li>Terminal de Github o aplicación manejadora de Github.</li>
@@ -28,7 +28,7 @@ Para poder replicar el proyecto, se requiere tener:
   <li>Hacer clic en <strong>"Save Channel"</strong>.</li>
   <li>Dentro del canal creado, ir a la pestaña <strong>MATLAB Visualization</strong>.</li>
   <li>Hacer clic en <strong>"Create"</strong>.</li>
-  <li>En el apartado <strong>MATLAB Code</strong>, pegar el código del archivo <code>average.txt</code>, asegurándose de reemplazar las variables <code>channelID</code> y <code>alertAPIKey</code> con las propias.</li>
+  <li>En el apartado <strong>MATLAB Code</strong>, pegar el código del archivo <code>average.txt</code> (encontrado en este repositorio), asegurándose de reemplazar las variables <code>channelID</code> y <code>alertAPIKey</code> con las propias, que pueden ser encontradas junto al apartado de código y en el apartado de "My profile" respectivamente.</li>
   <li>Hacer clic en el botón <strong>"Save"</strong>.</li>
   <li>Volver al canal creado.</li>
   <li>Hacer clic en el botón <strong>MATLAB Analysis</strong>.</li>
